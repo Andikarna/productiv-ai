@@ -1,0 +1,82 @@
+2026-04-20 19:41:34 [error]: ❌ MongoDB initial connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2026-04-20 19:43:08 [error]: ❌ MongoDB initial connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2026-04-20 19:46:26 [error]: ❌ MongoDB initial connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2026-04-20 19:52:35 [error]: ❌ MySQL connection failed: 
+2026-04-20 19:52:44 [error]: ❌ MySQL connection failed: 
+2026-04-20 19:52:57 [error]: ❌ MySQL connection failed: 
+2026-04-20 19:53:32 [error]: ❌ MySQL connection failed: 
+2026-04-20 19:55:12 [error]: ❌ MySQL connection failed: Access denied for user 'root'@'localhost' (using password: YES)
+2026-04-20 19:55:27 [error]: ❌ MySQL connection failed: Access denied for user 'root'@'localhost' (using password: YES)
+2026-04-20 19:56:08 [error]: ❌ MySQL connection failed: Access denied for user 'root'@'localhost' (using password: YES)
+2026-04-20 19:59:49 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+2026-04-20 19:59:49 [error]: [POST] /api/chat → 500: Error: Invalid Gemini API key. Please check your configuration.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:57:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-20 20:01:38 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-20 20:01:38 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:66:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-20 20:02:13 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-20 20:02:13 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:66:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 19:52:37 [error]: ❌ MySQL connection failed: 
+2026-04-22 19:54:33 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-22 19:54:33 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:66:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:07:37 [error]: Gemini API error: [GoogleGenerativeAI Error]: First content should be with role 'user', got model
+2026-04-22 20:07:37 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:66:11)
+    at sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-22 20:08:14 [error]: Gemini API error: [GoogleGenerativeAI Error]: First content should be with role 'user', got model
+2026-04-22 20:08:14 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:66:11)
+    at sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-22 20:20:33 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-22 20:20:33 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:21:00 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-22 20:21:00 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:25:55 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-22 20:25:55 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:27:59 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-22 20:27:59 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:28:40 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash:generateContent: [404 Not Found] models/gemini-3-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-22 20:28:40 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:30:02 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-22 20:30:02 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:31:02 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-22 20:31:02 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:31:28 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-22 20:31:28 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-24 19:19:33 [error]: ❌ MySQL connection failed: 

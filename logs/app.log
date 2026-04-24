@@ -1,0 +1,359 @@
+2026-04-20 19:41:34 [error]: ❌ MongoDB initial connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2026-04-20 19:43:08 [error]: ❌ MongoDB initial connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2026-04-20 19:46:26 [error]: ❌ MongoDB initial connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2026-04-20 19:52:35 [error]: ❌ MySQL connection failed: 
+2026-04-20 19:52:44 [error]: ❌ MySQL connection failed: 
+2026-04-20 19:52:57 [error]: ❌ MySQL connection failed: 
+2026-04-20 19:53:32 [error]: ❌ MySQL connection failed: 
+2026-04-20 19:55:12 [error]: ❌ MySQL connection failed: Access denied for user 'root'@'localhost' (using password: YES)
+2026-04-20 19:55:27 [error]: ❌ MySQL connection failed: Access denied for user 'root'@'localhost' (using password: YES)
+2026-04-20 19:56:08 [error]: ❌ MySQL connection failed: Access denied for user 'root'@'localhost' (using password: YES)
+2026-04-20 19:57:22 [info]: ✅ MySQL connected successfully
+2026-04-20 19:57:22 [info]: ✅ MySQL tables synced
+2026-04-20 19:57:22 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-20 19:57:22 [info]: 📦 Environment: development
+2026-04-20 19:57:22 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-20 19:57:55 [http]: [0mPOST /api/auth/login [33m401[0m 16.072 ms - 56[0m
+2026-04-20 19:57:57 [http]: [0mPOST /api/auth/login [33m401[0m 2.300 ms - 56[0m
+2026-04-20 19:59:05 [http]: [0mPOST /api/auth/login [33m401[0m 3.924 ms - 56[0m
+2026-04-20 19:59:19 [info]: New user registered: andikarna@gmail.com
+2026-04-20 19:59:19 [http]: [0mPOST /api/auth/register [32m201[0m 291.413 ms - 315[0m
+2026-04-20 19:59:19 [http]: [0mGET /api/chat/history?page=1&limit=50 [32m200[0m 11.164 ms - 89[0m
+2026-04-20 19:59:19 [http]: [0mGET /api/task [32m200[0m 11.521 ms - 37[0m
+2026-04-20 19:59:19 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 4.811 ms - -[0m
+2026-04-20 19:59:19 [http]: [0mGET /api/task [36m304[0m 9.192 ms - -[0m
+2026-04-20 19:59:49 [debug]: Task stats for 1: pending=0, overdue=0, done=0
+2026-04-20 19:59:49 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+2026-04-20 19:59:49 [error]: [POST] /api/chat → 500: Error: Invalid Gemini API key. Please check your configuration.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:57:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-20 19:59:49 [http]: [0mPOST /api/chat [31m500[0m 230.404 ms - 456[0m
+2026-04-20 20:01:18 [info]: ✅ MySQL connected successfully
+2026-04-20 20:01:19 [info]: ✅ MySQL tables synced
+2026-04-20 20:01:19 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-20 20:01:19 [info]: 📦 Environment: development
+2026-04-20 20:01:19 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-20 20:01:36 [debug]: Task stats for 1: pending=0, overdue=0, done=0
+2026-04-20 20:01:38 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-20 20:01:38 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:66:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-20 20:01:38 [http]: [0mPOST /api/chat [31m500[0m 1789.102 ms - 432[0m
+2026-04-20 20:02:06 [info]: ✅ MySQL connected successfully
+2026-04-20 20:02:07 [info]: ✅ MySQL tables synced
+2026-04-20 20:02:07 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-20 20:02:07 [info]: 📦 Environment: development
+2026-04-20 20:02:07 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-20 20:02:13 [debug]: Task stats for 1: pending=0, overdue=0, done=0
+2026-04-20 20:02:13 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-20 20:02:13 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:66:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-20 20:02:13 [http]: [0mPOST /api/chat [31m500[0m 193.843 ms - 432[0m
+2026-04-20 20:03:58 [info]: ✅ MySQL connected successfully
+2026-04-20 20:03:59 [info]: ✅ MySQL tables synced
+2026-04-20 20:03:59 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-20 20:03:59 [info]: 📦 Environment: development
+2026-04-20 20:03:59 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 19:52:37 [error]: ❌ MySQL connection failed: 
+2026-04-22 19:52:52 [info]: ✅ MySQL connected successfully
+2026-04-22 19:52:52 [info]: ✅ MySQL tables synced
+2026-04-22 19:52:52 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 19:52:52 [info]: 📦 Environment: development
+2026-04-22 19:52:52 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 19:54:19 [http]: [0mGET /api/chat/history?page=1&limit=50 [32m200[0m 22.383 ms - 89[0m
+2026-04-22 19:54:19 [http]: [0mGET /api/task [32m200[0m 19.428 ms - 37[0m
+2026-04-22 19:54:19 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 4.880 ms - -[0m
+2026-04-22 19:54:19 [http]: [0mGET /api/task [36m304[0m 5.073 ms - -[0m
+2026-04-22 19:54:32 [debug]: Task stats for 1: pending=0, overdue=0, done=0
+2026-04-22 19:54:33 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-22 19:54:33 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:66:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 19:54:33 [http]: [0mPOST /api/chat [31m500[0m 353.060 ms - 432[0m
+2026-04-22 19:54:52 [info]: ✅ MySQL connected successfully
+2026-04-22 19:54:52 [info]: ✅ MySQL tables synced
+2026-04-22 19:54:52 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 19:54:52 [info]: 📦 Environment: development
+2026-04-22 19:54:52 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 19:55:02 [debug]: Task stats for 1: pending=0, overdue=0, done=0
+2026-04-22 19:55:04 [debug]: Gemini response: model=gemini-2.5-flash, tokens=347
+2026-04-22 19:55:04 [debug]: Saved chat exchange for user 1
+2026-04-22 19:55:04 [info]: Chat [andikarna@gmail.com]: 347 tokens used (gemini-2.5-flash)
+2026-04-22 19:55:04 [http]: [0mPOST /api/chat [32m200[0m 1891.483 ms - 363[0m
+2026-04-22 19:57:56 [http]: [0mGET /api/chat/history?page=1&limit=50 [32m200[0m 19.965 ms - 713[0m
+2026-04-22 19:57:56 [http]: [0mGET /api/task [36m304[0m 20.694 ms - -[0m
+2026-04-22 19:57:56 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 7.093 ms - -[0m
+2026-04-22 19:57:56 [http]: [0mGET /api/task [36m304[0m 7.549 ms - -[0m
+2026-04-22 20:01:23 [http]: [0mGET /api/task [36m304[0m 4.188 ms - -[0m
+2026-04-22 20:01:23 [http]: [0mGET /api/task [36m304[0m 1.975 ms - -[0m
+2026-04-22 20:07:37 [debug]: Task stats for 1: pending=0, overdue=0, done=0
+2026-04-22 20:07:37 [error]: Gemini API error: [GoogleGenerativeAI Error]: First content should be with role 'user', got model
+2026-04-22 20:07:37 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:66:11)
+    at sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-22 20:07:37 [http]: [0mPOST /api/chat [31m500[0m 13.855 ms - 426[0m
+2026-04-22 20:08:03 [info]: ✅ MySQL connected successfully
+2026-04-22 20:08:04 [info]: ✅ MySQL tables synced
+2026-04-22 20:08:04 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 20:08:04 [info]: 📦 Environment: development
+2026-04-22 20:08:04 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 20:08:10 [info]: User logged in: andikarna@gmail.com
+2026-04-22 20:08:10 [http]: [0mPOST /api/auth/login [32m200[0m 292.992 ms - 307[0m
+2026-04-22 20:08:10 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 10.734 ms - -[0m
+2026-04-22 20:08:10 [http]: [0mGET /api/task [36m304[0m 13.632 ms - -[0m
+2026-04-22 20:08:10 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 4.761 ms - -[0m
+2026-04-22 20:08:10 [http]: [0mGET /api/task [36m304[0m 3.587 ms - -[0m
+2026-04-22 20:08:14 [debug]: Task stats for 1: pending=0, overdue=0, done=0
+2026-04-22 20:08:14 [error]: Gemini API error: [GoogleGenerativeAI Error]: First content should be with role 'user', got model
+2026-04-22 20:08:14 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:66:11)
+    at sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-22 20:08:14 [http]: [0mPOST /api/chat [31m500[0m 25.331 ms - 426[0m
+2026-04-22 20:09:07 [info]: ✅ MySQL connected successfully
+2026-04-22 20:09:07 [info]: ✅ MySQL tables synced
+2026-04-22 20:09:07 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 20:09:07 [info]: 📦 Environment: development
+2026-04-22 20:09:07 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 20:09:42 [debug]: Task stats for 1: pending=0, overdue=0, done=0
+2026-04-22 20:09:44 [debug]: Gemini response: model=gemini-2.5-flash, tokens=407
+2026-04-22 20:09:44 [debug]: Saved chat exchange for user 1
+2026-04-22 20:09:44 [info]: Chat [andikarna@gmail.com]: 407 tokens used (gemini-2.5-flash)
+2026-04-22 20:09:44 [http]: [0mPOST /api/chat [32m200[0m 2655.605 ms - 539[0m
+2026-04-22 20:11:29 [info]: Task created for andikarna@gmail.com: "Resolve Quiz Seasone Hactiv8"
+2026-04-22 20:11:29 [http]: [0mPOST /api/task [32m201[0m 19.227 ms - 331[0m
+2026-04-22 20:11:32 [http]: [0mPATCH /api/task/undefined [33m404[0m 5.094 ms - 61[0m
+2026-04-22 20:11:33 [http]: [0mPATCH /api/task/undefined [33m404[0m 2.266 ms - 61[0m
+2026-04-22 20:11:46 [http]: [0mPATCH /api/task/undefined [33m404[0m 5.041 ms - 61[0m
+2026-04-22 20:11:46 [http]: [0mPATCH /api/task/undefined [33m404[0m 2.674 ms - 61[0m
+2026-04-22 20:11:47 [http]: [0mPATCH /api/task/undefined [33m404[0m 2.540 ms - 61[0m
+2026-04-22 20:11:47 [http]: [0mPATCH /api/task/undefined [33m404[0m 1.798 ms - 61[0m
+2026-04-22 20:12:11 [debug]: Task stats for 1: pending=1, overdue=0, done=0
+2026-04-22 20:12:14 [debug]: Gemini response: model=gemini-2.5-flash, tokens=667
+2026-04-22 20:12:14 [debug]: Saved chat exchange for user 1
+2026-04-22 20:12:14 [info]: Chat [andikarna@gmail.com]: 667 tokens used (gemini-2.5-flash)
+2026-04-22 20:12:14 [http]: [0mPOST /api/chat [32m200[0m 3208.818 ms - 836[0m
+2026-04-22 20:12:36 [http]: [0mPATCH /api/task/undefined [33m404[0m 5.445 ms - 61[0m
+2026-04-22 20:12:37 [http]: [0mPATCH /api/task/undefined [33m404[0m 2.471 ms - 61[0m
+2026-04-22 20:12:37 [http]: [0mPATCH /api/task/undefined [33m404[0m 2.507 ms - 61[0m
+2026-04-22 20:12:37 [http]: [0mPATCH /api/task/undefined [33m404[0m 2.868 ms - 61[0m
+2026-04-22 20:12:37 [http]: [0mPATCH /api/task/undefined [33m404[0m 1.589 ms - 61[0m
+2026-04-22 20:12:55 [http]: [0mPATCH /api/task/undefined [33m404[0m 3.754 ms - 61[0m
+2026-04-22 20:12:55 [http]: [0mPATCH /api/task/undefined [33m404[0m 2.429 ms - 61[0m
+2026-04-22 20:12:56 [http]: [0mPATCH /api/task/undefined [33m404[0m 1.681 ms - 61[0m
+2026-04-22 20:12:56 [http]: [0mPATCH /api/task/undefined [33m404[0m 1.869 ms - 61[0m
+2026-04-22 20:14:37 [http]: [0mGET /api/task [32m200[0m 4.731 ms - 314[0m
+2026-04-22 20:14:39 [http]: [0mGET /api/task [36m304[0m 3.775 ms - -[0m
+2026-04-22 20:14:39 [http]: [0mGET /api/task [36m304[0m 4.680 ms - -[0m
+2026-04-22 20:14:39 [http]: [0mGET /api/task [36m304[0m 3.383 ms - -[0m
+2026-04-22 20:15:56 [http]: [0mPATCH /api/task/undefined [33m404[0m 4.773 ms - 61[0m
+2026-04-22 20:16:06 [http]: [0mDELETE /api/task/undefined [32m200[0m 3.725 ms - 54[0m
+2026-04-22 20:16:22 [info]: Task created for andikarna@gmail.com: "Resolve Quiz Seasone Hactiv8"
+2026-04-22 20:16:22 [http]: [0mPOST /api/task [32m201[0m 12.357 ms - 333[0m
+2026-04-22 20:16:25 [http]: [0mPATCH /api/task/undefined [33m404[0m 1.894 ms - 61[0m
+2026-04-22 20:16:25 [http]: [0mPATCH /api/task/undefined [33m404[0m 2.196 ms - 61[0m
+2026-04-22 20:18:41 [http]: [0mGET /api/task [32m200[0m 6.733 ms - 594[0m
+2026-04-22 20:18:41 [http]: [0mGET /api/task [36m304[0m 2.007 ms - -[0m
+2026-04-22 20:20:16 [http]: [0mPATCH /api/task/undefined [33m404[0m 4.022 ms - 61[0m
+2026-04-22 20:20:17 [http]: [0mPATCH /api/task/undefined [33m404[0m 2.987 ms - 61[0m
+2026-04-22 20:20:17 [http]: [0mPATCH /api/task/undefined [33m404[0m 2.059 ms - 61[0m
+2026-04-22 20:20:31 [debug]: Task stats for 1: pending=2, overdue=1, done=0
+2026-04-22 20:20:33 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-22 20:20:33 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:20:33 [http]: [0mPOST /api/chat [31m500[0m 1508.089 ms - 432[0m
+2026-04-22 20:20:58 [debug]: Task stats for 1: pending=2, overdue=1, done=0
+2026-04-22 20:21:00 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-22 20:21:00 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:21:00 [http]: [0mPOST /api/chat [31m500[0m 1872.270 ms - 432[0m
+2026-04-22 20:25:53 [debug]: Task stats for 1: pending=2, overdue=1, done=0
+2026-04-22 20:25:55 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-22 20:25:55 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:25:55 [http]: [0mPOST /api/chat [31m500[0m 1634.237 ms - 432[0m
+2026-04-22 20:26:43 [http]: [0mGET /api/task [36m304[0m 3.840 ms - -[0m
+2026-04-22 20:26:43 [http]: [0mGET /api/task [36m304[0m 2.535 ms - -[0m
+2026-04-22 20:26:45 [http]: [0mGET /api/task [36m304[0m 2.061 ms - -[0m
+2026-04-22 20:26:49 [http]: [0mGET /api/task [36m304[0m 2.886 ms - -[0m
+2026-04-22 20:26:56 [info]: ✅ MySQL connected successfully
+2026-04-22 20:26:57 [info]: ✅ MySQL tables synced
+2026-04-22 20:26:57 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 20:26:57 [info]: 📦 Environment: development
+2026-04-22 20:26:57 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 20:27:33 [info]: ✅ MySQL connected successfully
+2026-04-22 20:27:34 [info]: ✅ MySQL tables synced
+2026-04-22 20:27:34 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 20:27:34 [info]: 📦 Environment: development
+2026-04-22 20:27:34 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 20:27:49 [http]: [0mGET /api/chat/history?page=1&limit=50 [32m200[0m 26.122 ms - 2681[0m
+2026-04-22 20:27:49 [http]: [0mGET /api/task [36m304[0m 25.257 ms - -[0m
+2026-04-22 20:27:49 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 6.412 ms - -[0m
+2026-04-22 20:27:49 [http]: [0mGET /api/task [36m304[0m 8.283 ms - -[0m
+2026-04-22 20:27:49 [http]: [0mGET /api/task [36m304[0m 3.159 ms - -[0m
+2026-04-22 20:27:49 [http]: [0mGET /api/task [36m304[0m 2.021 ms - -[0m
+2026-04-22 20:27:57 [debug]: Task stats for 1: pending=2, overdue=1, done=0
+2026-04-22 20:27:59 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-22 20:27:59 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:27:59 [http]: [0mPOST /api/chat [31m500[0m 2140.917 ms - 432[0m
+2026-04-22 20:28:35 [info]: ✅ MySQL connected successfully
+2026-04-22 20:28:35 [info]: ✅ MySQL tables synced
+2026-04-22 20:28:35 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 20:28:35 [info]: 📦 Environment: development
+2026-04-22 20:28:35 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 20:28:40 [debug]: Task stats for 1: pending=2, overdue=1, done=0
+2026-04-22 20:28:40 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash:generateContent: [404 Not Found] models/gemini-3-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-22 20:28:40 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:28:40 [http]: [0mPOST /api/chat [31m500[0m 276.937 ms - 432[0m
+2026-04-22 20:29:55 [info]: ✅ MySQL connected successfully
+2026-04-22 20:29:56 [info]: ✅ MySQL tables synced
+2026-04-22 20:29:56 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 20:29:56 [info]: 📦 Environment: development
+2026-04-22 20:29:56 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 20:30:00 [debug]: Task stats for 1: pending=2, overdue=1, done=0
+2026-04-22 20:30:02 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-22 20:30:02 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:30:02 [http]: [0mPOST /api/chat [31m500[0m 1720.589 ms - 432[0m
+2026-04-22 20:30:54 [info]: ✅ MySQL connected successfully
+2026-04-22 20:30:55 [info]: ✅ MySQL tables synced
+2026-04-22 20:30:55 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 20:30:55 [info]: 📦 Environment: development
+2026-04-22 20:30:55 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 20:30:59 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 28.303 ms - -[0m
+2026-04-22 20:30:59 [http]: [0mGET /api/task [36m304[0m 22.342 ms - -[0m
+2026-04-22 20:30:59 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 6.547 ms - -[0m
+2026-04-22 20:30:59 [http]: [0mGET /api/task [36m304[0m 5.503 ms - -[0m
+2026-04-22 20:30:59 [http]: [0mGET /api/task [36m304[0m 6.855 ms - -[0m
+2026-04-22 20:30:59 [http]: [0mGET /api/task [36m304[0m 4.818 ms - -[0m
+2026-04-22 20:31:02 [debug]: Task stats for 1: pending=2, overdue=1, done=0
+2026-04-22 20:31:02 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-04-22 20:31:02 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:31:02 [http]: [0mPOST /api/chat [31m500[0m 290.452 ms - 432[0m
+2026-04-22 20:31:21 [info]: ✅ MySQL connected successfully
+2026-04-22 20:31:21 [info]: ✅ MySQL tables synced
+2026-04-22 20:31:21 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 20:31:21 [info]: 📦 Environment: development
+2026-04-22 20:31:21 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 20:31:23 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 20.243 ms - -[0m
+2026-04-22 20:31:23 [http]: [0mGET /api/task [36m304[0m 17.586 ms - -[0m
+2026-04-22 20:31:23 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 5.799 ms - -[0m
+2026-04-22 20:31:23 [http]: [0mGET /api/task [36m304[0m 4.471 ms - -[0m
+2026-04-22 20:31:23 [http]: [0mGET /api/task [36m304[0m 3.728 ms - -[0m
+2026-04-22 20:31:23 [http]: [0mGET /api/task [36m304[0m 2.944 ms - -[0m
+2026-04-22 20:31:25 [debug]: Task stats for 1: pending=2, overdue=1, done=0
+2026-04-22 20:31:28 [error]: Gemini API error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-22 20:31:28 [error]: [POST] /api/chat → 500: Error: Failed to get AI response. Please try again.
+    at Object.chat (C:\DataFile\Hacktiv8\Final Project\backend\services\aiService.js:92:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sendMessage (C:\DataFile\Hacktiv8\Final Project\backend\controllers\chatController.js:38:52)
+2026-04-22 20:31:28 [http]: [0mPOST /api/chat [31m500[0m 2404.456 ms - 432[0m
+2026-04-22 20:33:54 [http]: [0mPATCH /api/task/2 [32m200[0m 17.740 ms - 326[0m
+2026-04-22 20:33:54 [http]: [0mPATCH /api/task/1 [32m200[0m 15.177 ms - 324[0m
+2026-04-22 20:33:57 [http]: [0mPATCH /api/task/2 [32m200[0m 8.775 ms - 329[0m
+2026-04-22 20:33:58 [http]: [0mPATCH /api/task/1 [32m200[0m 8.134 ms - 327[0m
+2026-04-22 20:34:00 [http]: [0mPATCH /api/task/2 [32m200[0m 8.296 ms - 326[0m
+2026-04-22 20:34:01 [http]: [0mPATCH /api/task/1 [32m200[0m 7.975 ms - 324[0m
+2026-04-22 20:34:05 [http]: [0mPATCH /api/task/1 [32m200[0m 8.447 ms - 327[0m
+2026-04-22 20:34:09 [http]: [0mPATCH /api/task/2 [32m200[0m 8.411 ms - 329[0m
+2026-04-22 20:34:10 [http]: [0mPATCH /api/task/2 [32m200[0m 8.680 ms - 326[0m
+2026-04-22 20:34:12 [http]: [0mPATCH /api/task/1 [32m200[0m 7.586 ms - 324[0m
+2026-04-22 20:34:13 [http]: [0mPATCH /api/task/2 [32m200[0m 9.482 ms - 329[0m
+2026-04-22 20:34:14 [http]: [0mPATCH /api/task/1 [32m200[0m 8.277 ms - 327[0m
+2026-04-22 20:34:20 [http]: [0mPATCH /api/task/1 [32m200[0m 7.653 ms - 324[0m
+2026-04-22 20:49:12 [info]: ✅ MySQL connected successfully
+2026-04-22 20:49:12 [info]: ✅ MySQL tables synced
+2026-04-22 20:49:12 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 20:49:12 [info]: 📦 Environment: development
+2026-04-22 20:49:12 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 20:49:20 [debug]: Task stats for 1: pending=1, overdue=1, done=1
+2026-04-22 20:49:21 [debug]: Gemini response: model=gemini-2.5-flash-lite, tokens=544
+2026-04-22 20:49:21 [debug]: Saved chat exchange for user 1
+2026-04-22 20:49:21 [info]: Chat [andikarna@gmail.com]: 544 tokens used (gemini-2.5-flash-lite)
+2026-04-22 20:49:22 [http]: [0mPOST /api/chat [32m200[0m 1083.411 ms - 154[0m
+2026-04-22 20:49:51 [debug]: Task stats for 1: pending=1, overdue=1, done=1
+2026-04-22 20:49:53 [debug]: Gemini response: model=gemini-2.5-flash-lite, tokens=650
+2026-04-22 20:49:53 [debug]: Saved chat exchange for user 1
+2026-04-22 20:49:53 [info]: Chat [andikarna@gmail.com]: 650 tokens used (gemini-2.5-flash-lite)
+2026-04-22 20:49:53 [http]: [0mPOST /api/chat [32m200[0m 2312.910 ms - 443[0m
+2026-04-22 20:51:43 [debug]: Task stats for 1: pending=1, overdue=1, done=1
+2026-04-22 20:51:45 [debug]: Gemini response: model=gemini-2.5-flash-lite, tokens=788
+2026-04-22 20:51:45 [debug]: Saved chat exchange for user 1
+2026-04-22 20:51:45 [info]: Chat [andikarna@gmail.com]: 788 tokens used (gemini-2.5-flash-lite)
+2026-04-22 20:51:45 [http]: [0mPOST /api/chat [32m200[0m 2235.344 ms - 653[0m
+2026-04-22 20:52:14 [debug]: Task stats for 1: pending=1, overdue=1, done=1
+2026-04-22 20:52:15 [debug]: Gemini response: model=gemini-2.5-flash-lite, tokens=876
+2026-04-22 20:52:15 [debug]: Saved chat exchange for user 1
+2026-04-22 20:52:15 [info]: Chat [andikarna@gmail.com]: 876 tokens used (gemini-2.5-flash-lite)
+2026-04-22 20:52:15 [http]: [0mPOST /api/chat [32m200[0m 1348.504 ms - 457[0m
+2026-04-22 20:53:04 [info]: ✅ MySQL connected successfully
+2026-04-22 20:53:04 [info]: ✅ MySQL tables synced
+2026-04-22 20:53:04 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 20:53:04 [info]: 📦 Environment: development
+2026-04-22 20:53:04 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 20:53:22 [info]: ✅ MySQL connected successfully
+2026-04-22 20:53:23 [info]: ✅ MySQL tables synced
+2026-04-22 20:53:23 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 20:53:23 [info]: 📦 Environment: development
+2026-04-22 20:53:23 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 20:53:38 [info]: ✅ MySQL connected successfully
+2026-04-22 20:53:39 [info]: ✅ MySQL tables synced
+2026-04-22 20:53:39 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 20:53:39 [info]: 📦 Environment: development
+2026-04-22 20:53:39 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-22 20:53:57 [http]: [0mGET /api/task [32m200[0m 16.582 ms - 591[0m
+2026-04-22 20:53:57 [http]: [0mGET /api/chat/history?page=1&limit=50 [32m200[0m 32.179 ms - 5415[0m
+2026-04-22 20:53:57 [http]: [0mGET /api/task [36m304[0m 9.563 ms - -[0m
+2026-04-22 20:53:57 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 14.993 ms - -[0m
+2026-04-22 20:53:57 [http]: [0mGET /api/task [36m304[0m 5.251 ms - -[0m
+2026-04-22 20:53:57 [http]: [0mGET /api/task [36m304[0m 3.212 ms - -[0m
+2026-04-22 20:54:19 [http]: [0mGET /api/task [36m304[0m 3.513 ms - -[0m
+2026-04-22 20:54:19 [http]: [0mGET /api/task [36m304[0m 4.943 ms - -[0m
+2026-04-22 20:54:19 [http]: [0mGET /api/task [36m304[0m 1.758 ms - -[0m
+2026-04-22 20:54:19 [http]: [0mGET /api/task [36m304[0m 2.447 ms - -[0m
+2026-04-22 20:58:49 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 10.380 ms - -[0m
+2026-04-22 20:58:49 [http]: [0mGET /api/task [36m304[0m 10.256 ms - -[0m
+2026-04-22 20:58:49 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 5.227 ms - -[0m
+2026-04-22 20:58:49 [http]: [0mGET /api/task [36m304[0m 3.700 ms - -[0m
+2026-04-22 20:58:49 [http]: [0mGET /api/task [36m304[0m 2.300 ms - -[0m
+2026-04-22 20:58:49 [http]: [0mGET /api/task [36m304[0m 2.124 ms - -[0m
+2026-04-22 20:59:03 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 10.581 ms - -[0m
+2026-04-22 20:59:03 [http]: [0mGET /api/task [36m304[0m 10.833 ms - -[0m
+2026-04-22 20:59:03 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 4.985 ms - -[0m
+2026-04-22 20:59:03 [http]: [0mGET /api/task [36m304[0m 4.762 ms - -[0m
+2026-04-22 20:59:03 [http]: [0mGET /api/task [36m304[0m 2.162 ms - -[0m
+2026-04-22 20:59:03 [http]: [0mGET /api/task [36m304[0m 3.427 ms - -[0m
+2026-04-22 20:59:22 [debug]: Task stats for 1: pending=1, overdue=1, done=1
+2026-04-22 20:59:31 [debug]: Gemini response: model=gemini-2.5-flash-lite, tokens=1264
+2026-04-22 20:59:31 [debug]: Saved chat exchange for user 1
+2026-04-22 20:59:31 [info]: Chat [andikarna@gmail.com]: 1264 tokens used (gemini-2.5-flash-lite)
+2026-04-22 20:59:31 [http]: [0mPOST /api/chat [32m200[0m 8250.150 ms - 1071[0m
+2026-04-22 21:13:51 [info]: ✅ MySQL connected successfully
+2026-04-22 21:13:51 [info]: ✅ MySQL tables synced
+2026-04-22 21:13:51 [info]: 🚀 ProductiveAI backend running on http://localhost:5000
+2026-04-22 21:13:51 [info]: 📦 Environment: development
+2026-04-22 21:13:51 [info]: 🤖 AI Model: gpt-4o-mini
+2026-04-24 19:19:33 [error]: ❌ MySQL connection failed: 
