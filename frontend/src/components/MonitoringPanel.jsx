@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-
+import { BarChart3, Clock, AlertTriangle, AlertCircle } from 'lucide-react';
 export default function MonitoringPanel({ taskHook }) {
   const { tasks, fetchTasks, loading } = taskHook;
 
@@ -76,14 +76,14 @@ export default function MonitoringPanel({ taskHook }) {
               <MetricCard 
                 title="Total Directives" 
                 value={totalTasks} 
-                icon="📊" 
+                icon={<BarChart3 size={20} />} 
                 delay={1} 
               />
               
               <MetricCard 
                 title="Pending / Active" 
                 value={pendingTasks} 
-                icon="⏳" 
+                icon={<Clock size={20} color="var(--color-warning)" />} 
                 color="var(--color-warning)" 
                 delay={2} 
               />
@@ -91,7 +91,7 @@ export default function MonitoringPanel({ taskHook }) {
               <MetricCard 
                 title="Overdue" 
                 value={overdueTasks} 
-                icon="⚠️" 
+                icon={<AlertTriangle size={20} color="var(--color-danger)" />} 
                 color="var(--color-danger)" 
                 delay={3} 
               />
@@ -99,7 +99,7 @@ export default function MonitoringPanel({ taskHook }) {
               <MetricCard 
                 title="Critical Priority" 
                 value={highPriority} 
-                icon="🔴" 
+                icon={<AlertCircle size={20} color="var(--color-danger)" />} 
                 color="var(--color-danger)" 
                 delay={4} 
               />

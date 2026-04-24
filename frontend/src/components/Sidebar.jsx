@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useTask } from '../hooks/useTask';
+import { MessageSquare, LayoutList, Activity, Moon, Sun, PanelLeftClose, PanelLeftOpen, LogOut, Zap } from 'lucide-react';
 
 const NAV_ITEMS = [
-  { icon: '❖', label: 'Chat Interface', id: 'chat' },
-  { icon: '≡', label: 'Task Matrix', id: 'tasks' },
-  { icon: '◱', label: 'Monitoring', id: 'monitoring' },
+  { icon: <MessageSquare size={20} />, label: 'Chat Interface', id: 'chat' },
+  { icon: <LayoutList size={20} />, label: 'Task Matrix', id: 'tasks' },
+  { icon: <Activity size={20} />, label: 'Monitoring', id: 'monitoring' },
 ];
 
 export default function Sidebar({ activeView, onViewChange, theme, onToggleTheme }) {
@@ -51,7 +52,7 @@ export default function Sidebar({ activeView, onViewChange, theme, onToggleTheme
           boxShadow: 'var(--glow-primary)',
           border: '1px solid rgba(255,255,255,0.2)'
         }}>
-          ⚡
+          <Zap size={24} color="#fff" />
         </div>
         {!collapsed && (
           <div style={{ overflow: 'hidden' }}>
@@ -167,7 +168,7 @@ export default function Sidebar({ activeView, onViewChange, theme, onToggleTheme
           style={{ width: '100%', justifyContent: collapsed ? 'center' : 'flex-start', gap: '12px', borderRadius: 'var(--radius-md)' }}
           title="Toggle theme"
         >
-          <span style={{ fontSize: '1.2rem' }}>{theme === 'dark' ? '◐' : '◑'}</span>
+          <span style={{ fontSize: '1.2rem', display: 'flex' }}>{theme === 'dark' ? <Moon size={20}/> : <Sun size={20}/>}</span>
           {!collapsed && <span style={{ fontSize: '0.85rem', fontFamily: 'var(--font-display)' }}>Theme: {theme === 'dark' ? 'Dark' : 'Light'}</span>}
         </button>
 
@@ -179,7 +180,7 @@ export default function Sidebar({ activeView, onViewChange, theme, onToggleTheme
           style={{ width: '100%', justifyContent: collapsed ? 'center' : 'flex-start', gap: '12px', borderRadius: 'var(--radius-md)' }}
           title={collapsed ? 'Expand' : 'Collapse'}
         >
-          <span style={{ fontSize: '1.2rem' }}>{collapsed ? '→' : '←'}</span>
+          <span style={{ fontSize: '1.2rem', display: 'flex' }}>{collapsed ? <PanelLeftOpen size={20}/> : <PanelLeftClose size={20}/>}</span>
           {!collapsed && <span style={{ fontSize: '0.85rem', fontFamily: 'var(--font-display)' }}>Collapse Panel</span>}
         </button>
 
@@ -190,7 +191,7 @@ export default function Sidebar({ activeView, onViewChange, theme, onToggleTheme
           className="btn btn-ghost"
           style={{ width: '100%', justifyContent: collapsed ? 'center' : 'flex-start', gap: '12px', color: 'var(--color-danger)', borderRadius: 'var(--radius-md)' }}
         >
-          <span style={{ fontSize: '1.2rem' }}>⏻</span>
+          <span style={{ fontSize: '1.2rem', display: 'flex' }}><LogOut size={20}/></span>
           {!collapsed && <span style={{ fontSize: '0.85rem', fontFamily: 'var(--font-display)', fontWeight: '600' }}>Disconnect</span>}
         </button>
       </div>

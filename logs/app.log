@@ -373,3 +373,15 @@
 2026-04-24 19:21:55 [debug]: Saved chat exchange for user 1
 2026-04-24 19:21:55 [info]: Chat [andikarna@gmail.com]: 835 tokens used (gemini-2.5-flash-lite)
 2026-04-24 19:21:55 [http]: [0mPOST /api/chat [32m200[0m 934.001 ms - 218[0m
+2026-04-24 19:37:37 [http]: [0mGET /api/chat/history?page=1&limit=50 [32m200[0m 14.807 ms - 7216[0m
+2026-04-24 19:37:37 [http]: [0mGET /api/task [36m304[0m 14.934 ms - -[0m
+2026-04-24 19:37:37 [http]: [0mGET /api/chat/history?page=1&limit=50 [36m304[0m 10.608 ms - -[0m
+2026-04-24 19:37:37 [http]: [0mGET /api/task [36m304[0m 10.003 ms - -[0m
+2026-04-24 19:37:37 [http]: [0mGET /api/task [36m304[0m 2.051 ms - -[0m
+2026-04-24 19:37:37 [http]: [0mGET /api/task [36m304[0m 2.547 ms - -[0m
+2026-04-24 19:37:54 [http]: [0mGET /api/task [36m304[0m 4.127 ms - -[0m
+2026-04-24 19:47:08 [debug]: Task stats for 1: pending=1, overdue=1, done=1
+2026-04-24 19:47:09 [debug]: Gemini response: model=gemini-2.5-flash-lite, tokens=799
+2026-04-24 19:47:09 [debug]: Saved chat exchange for user 1
+2026-04-24 19:47:09 [info]: Chat [andikarna@gmail.com]: 799 tokens used (gemini-2.5-flash-lite)
+2026-04-24 19:47:09 [http]: [0mPOST /api/chat [32m200[0m 1317.816 ms - 365[0m

@@ -2,12 +2,13 @@ import { useEffect, useRef, useState } from 'react';
 import { useChat } from '../context/ChatContext';
 import MessageBubble from './MessageBubble';
 import TypingIndicator from './TypingIndicator';
+import { Command, Sparkles, Zap, ListTodo, Image as ImageIcon, Send, X, RefreshCw } from 'lucide-react';
 
 const QUICK_PROMPTS = [
-  { icon: '⌘', text: 'Optimize my daily schedule' },
-  { icon: '✧', text: 'Draft a project roadmap' },
-  { icon: '⚡', text: 'I need a productivity boost' },
-  { icon: '⟡', text: 'Review my pending tasks' },
+  { icon: <Command size={24} />, text: 'Optimize my daily schedule' },
+  { icon: <Sparkles size={24} />, text: 'Draft a project roadmap' },
+  { icon: <Zap size={24} />, text: 'I need a productivity boost' },
+  { icon: <ListTodo size={24} />, text: 'Review my pending tasks' },
 ];
 
 export default function ChatWindow({ tasks = [] }) {
@@ -219,9 +220,9 @@ export default function ChatWindow({ tasks = [] }) {
             {/* Welcome */}
             <div style={{ position: 'relative' }}>
               <div style={{ 
-                fontSize: '4rem', marginBottom: '24px', filter: 'drop-shadow(var(--glow-primary))',
-                animation: 'float 6s infinite alternate'
-              }}>⚡</div>
+                marginBottom: '24px', filter: 'drop-shadow(var(--glow-primary))',
+                animation: 'float 6s infinite alternate', display: 'flex', justifyContent: 'center'
+              }}><Zap size={64} color="var(--color-primary-light)"/></div>
               <h2 style={{ fontSize: '2.5rem', marginBottom: '12px', lineHeight: '1.2' }}>
                 System Ready, <br/><span className="text-gradient">Commander</span>
               </h2>
@@ -285,23 +286,26 @@ export default function ChatWindow({ tasks = [] }) {
             position: 'absolute',
             bottom: '100%',
             left: '32px',
-            marginBottom: '8px',
-            width: '350px',
-            maxHeight: '220px',
+            marginBottom: '12px',
+            width: '380px',
+            maxHeight: '260px',
             overflowY: 'auto',
             borderRadius: 'var(--radius-lg)',
-            padding: '8px',
-            boxShadow: 'var(--shadow-lg)'
+            padding: '12px',
+            boxShadow: 'var(--shadow-lg), 0 0 40px rgba(0,0,0,0.5)',
+            background: 'var(--color-bg-secondary)', // Use solid background to prevent overlapping text visibility
+            zIndex: 50,
+            border: '1px solid var(--color-border-glow)'
           }}>
-             <div style={{ padding: '8px', fontSize: '0.75rem', color: 'var(--color-text-muted)', borderBottom: '1px solid var(--color-border)', marginBottom: '8px' }}>
+             <div style={{ padding: '4px 8px 12px', fontSize: '0.8rem', color: 'var(--color-text-muted)', borderBottom: '1px solid var(--color-border)', marginBottom: '12px', fontWeight: '600', letterSpacing: '0.02em', textTransform: 'uppercase' }}>
                 Select a directive to cross-reference
              </div>
              {filteredTasks.length === 0 ? (
-               <div style={{ padding: '12px', fontSize: '0.9rem', color: 'var(--color-text-faint)', textAlign: 'center' }}>
+               <div style={{ padding: '16px', fontSize: '0.9rem', color: 'var(--color-text-faint)', textAlign: 'center' }}>
                   No active directives found matching "{mentionFilter}"
                </div>
              ) : (
-               <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+               <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                  {filteredTasks.map((task, idx) => (
                    <button
                      key={task.id}
@@ -309,17 +313,26 @@ export default function ChatWindow({ tasks = [] }) {
                      onMouseEnter={() => setMentionIndex(idx)}
                      style={{
                        display: 'flex', alignItems: 'center', gap: '12px',
-                       padding: '12px', width: '100%', textAlign: 'left',
-                       background: mentionIndex === idx ? 'rgba(138,43,226,0.2)' : 'transparent',
-                       border: mentionIndex === idx ? '1px solid rgba(138,43,226,0.5)' : '1px solid transparent',
-                       borderRadius: 'var(--radius-sm)',
-                       color: 'var(--color-text)',
+                       padding: '10px 12px', width: '100%', textAlign: 'left',
+                       background: mentionIndex === idx ? 'rgba(138,43,226,0.15)' : 'transparent',
+                       border: mentionIndex === idx ? '1px solid rgba(138,43,226,0.4)' : '1px solid transparent',
+                       borderRadius: 'var(--radius-md)',
+                       color: mentionIndex === idx ? '#fff' : 'var(--color-text)',
                        cursor: 'pointer',
-                       transition: 'background 0.1s ease',
+                       transition: 'all 0.2s ease',
                      }}
                    >
-                     <span style={{ color: 'var(--color-accent)' }}>⚡</span>
-                     <span style={{ fontSize: '0.9rem', flex: 1, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                     <span style={{ 
+                       display: 'flex', alignItems: 'center', justifyContent: 'center',
+                       width: '32px', height: '32px', borderRadius: '8px',
+                       background: mentionIndex === idx ? 'var(--gradient-brand)' : 'rgba(0, 240, 255, 0.1)',
+                       color: mentionIndex === idx ? '#fff' : 'var(--color-accent)',
+                       flexShrink: 0,
+                       boxShadow: mentionIndex === idx ? 'var(--glow-primary)' : 'none'
+                     }}>
+                       <Zap size={16}/>
+                     </span>
+                     <span style={{ fontSize: '0.95rem', flex: 1, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', fontWeight: mentionIndex === idx ? '500' : '400' }}>
                        {task.title}
                      </span>
                    </button>
@@ -363,7 +376,7 @@ export default function ChatWindow({ tasks = [] }) {
                   fontSize: '12px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center'
                 }}
               >
-                ✕
+                <X size={12} />
               </button>
             </div>
           )}
@@ -382,11 +395,7 @@ export default function ChatWindow({ tasks = [] }) {
               style={{ padding: '12px', borderRadius: '50%', color: 'var(--color-text-muted)' }}
               title="Upload Image"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                <polyline points="21 15 16 10 5 21"></polyline>
-              </svg>
+              <ImageIcon size={24} />
             </button>
             <textarea
               id="chat-input"
@@ -428,7 +437,7 @@ export default function ChatWindow({ tasks = [] }) {
               minWidth: '60px',
             }}
           >
-            {sending ? <span className="spin">⟳</span> : <span style={{ fontSize: '1.2rem'}}>↑</span>}
+            {sending ? <span className="spin" style={{ display: 'flex' }}><RefreshCw size={20}/></span> : <span style={{ display: 'flex' }}><Send size={20}/></span>}
           </button>
           </div>
         </div>
